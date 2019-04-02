@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+div, h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  height: 20vh;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  margin: 1%;
+  margin-bottom: 15vh;
+}
+.browser {
+  text-align: center;
+  max-width: 300px;
+  max-height: 800px;
+  min-height: 350px;
+  border: 1px solid #e3e7f1;
+  border-left-width: 0;
+  padding: 1%;
+}
+.browser:first-of-type {
+  border-left-width: 1px;
+}
+.browser-name {
+  margin-top: 10%;
+  padding: 5%;
+  height: 20%;
+}
+.browser-logo {
+  margin-bottom: 25px;
+}
+.browser-version-label {
+  padding: 3%;
+}
+.browser-version {
+  font-size: 32px
+}
+.browser-download {
+  margin-top: 10%;
+}
+img {
+  height: 60px;
+}
+h3 {
+  font-weight: bold;
+  color: #F7567C;
+}
+.footer {
+  padding: 5%;
+  padding-right: 1%;
+}
+.footer-element {
+  margin-right: 1%;
+  display: inline;
+  float: right;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  border-bottom: 3px solid #F7567C;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+@media all and (max-width: 946px) {
+  .container {
+    flex-flow: row wrap;
+  }
+  .browser {
+    border-left-width: 1px;
+    padding: 20px;
+  }
+}
+@media all and (max-width: 640px) {
+  .footer-element {
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  img {
+    height: 50px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
