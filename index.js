@@ -28,7 +28,7 @@ const app = express();
 // add some security-related headers to the response
 app.use(helmet());
 
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 app.get('/', (req, res) => {
   let userAgent = req.headers['user-agent'];
@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
       <head>
         <title>Update your browser</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-        <link href="/css/styles.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
       </head>
       <body>
         <div class="header">
