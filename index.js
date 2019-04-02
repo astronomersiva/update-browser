@@ -75,7 +75,7 @@ app.get('/', (req, res) => {
           ${containerContents}
         </div>
         <div class="footer">
-          <div class="footer-element">Contribute on <a target="_blank" href="">GitHub</a></div>
+          <div class="footer-element">Contribute on <a target="_blank" href="https://github.com/astronomersiva/update-browser">GitHub</a></div>
           <div class="footer-element">&middot;</div>
           <div class="footer-element">Uses <a target="_blank" href="https://github.com/browserslist/browserslist">browserslist</a></div>
         </div>
